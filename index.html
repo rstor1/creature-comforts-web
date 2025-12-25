@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Creature Comforts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Cinzel+Decorative:wght@400&family=Inter:wght@300;400;600&family=Josefin+Slab:wght@300;400&display=swap" rel="stylesheet">  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- mobile nav toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#process">Process</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+<section id="home" class="hero">
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <h1 class="title">CREATURE COMFORTS</h1>
+      <!-- <h2 class="title-second">FX</h2> -->
+      <p class="tagline">Hand‑Crafted Latex Masks/Special Effects inspired by Film &amp; Art</p>
+      <!-- <a class="cta" href="#gallery">View Gallery</a> -->
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    <!-- GALLERY -->
+    <section id="gallery" class="gallery-section">
+      <div class="container">
+        <h2 class="section-title">GALLERY</h2>
+        <div class="grid">
+          <figure class="card">
+            <a href="#img-quaker" class="card-link">
+              <img src="images/masks/quaker.jpeg" alt="Creature mask">
+            </a>
+            <figcaption>
+              <div class="tag">CREATURE</div>
+              <div class="name">Creature</div>
+            </figcaption>
+          </figure>
+
+          <figure class="card">
+            <a href="#img-fletcher" class="card-link">
+              <img src="images/masks/fletcher.jpeg" alt="Horror mask">
+            </a>
+            <figcaption>
+              <div class="tag">HORROR</div>
+              <div class="name">Horror</div>
+            </figcaption>
+          </figure>
+
+          <figure class="card">
+            <a href="#img-mummy" class="card-link">
+              <img src="images/masks/mummy.jpeg" alt="Sci‑Fi mask">
+            </a>
+            <figcaption>
+              <div class="tag">SCI‑FI</div>
+              <div class="name">Sci‑Fi</div>
+            </figcaption>
+          </figure>
+
+          <figure class="card">
+            <a href="#img-pirate" class="card-link">
+              <img src="images/masks/pirate.jpeg" alt="Fantasy mask">
+            </a>
+            <figcaption>
+              <div class="tag">FANTASY</div>
+              <div class="name">Fantasy</div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CSS-ONLY MODAL LIGHTBOXES -->
+    <div id="img-quaker" class="lightbox">
+      <a href="#gallery" class="lightbox-close" aria-label="Close"></a>
+      <img src="images/masks/quaker.jpeg" alt="Creature mask enlarged">
+    </div>
+
+    <div id="img-fletcher" class="lightbox">
+      <a href="#gallery" class="lightbox-close" aria-label="Close"></a>
+      <img src="images/masks/fletcher.jpeg" alt="Horror mask enlarged">
+    </div>
+
+    <div id="img-mummy" class="lightbox">
+      <a href="#gallery" class="lightbox-close" aria-label="Close"></a>
+      <img src="images/masks/mummy.jpeg" alt="Sci‑Fi mask enlarged">
+    </div>
+
+    <div id="img-pirate" class="lightbox">
+      <a href="#gallery" class="lightbox-close" aria-label="Close"></a>
+      <img src="images/masks/pirate.jpeg" alt="Fantasy mask enlarged">
+    </div>
+
+    <!-- PROCESS -->
+    <section id="process" class="process">
+      <div class="container">
+        <h2 class="section-title">PROCESS</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="icon">✏️</div>
+            <h3>Concept &amp; Sketching</h3>
+            <p>Initial ideas, silhouettes, and reference gathering to define the creature’s personality.</p>
+          </div>
+          <div class="step">
+            <div class="icon">🗿</div>
+            <h3>Sculpting &amp; Mold Making</h3>
+            <p>Hand‑sculpted forms and durable molds built for repeatable casts.</p>
+          </div>
+          <div class="step">
+            <div class="icon">🎨</div>
+            <h3>Latex Casting &amp; Painting</h3>
+            <p>Layered casting, skin textures, and hand‑painted finishes.</p>
+          </div>
+          <div class="step">
+            <div class="icon">🔧</div>
+            <h3>Finishing Touches</h3>
+            <p>Hair work, fittings, and final detailing for camera‑ready pieces.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <div class="container about-inner">
+        <div class="portrait">
+          <img src="images/masks/artist.jpg" alt="Artist portrait">
+        </div>
+        <div class="bio">
+          <h2 class="section-title">ABOUT THE ARTIST</h2>
+          <p>
+            With a background in industrial design and special effects, each mask is treated as a character—
+            built from sketch to final paint with an obsession for texture, realism, and expression.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">CONTACT</h2>
+        <form class="contact-form" action="#" method="post">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button type="submit" class="send">Send</button>
+        </form>
+        <div class="socials">
+          Instagram • Email
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav');
+
+    document.addEventListener('click', function(event) {
+      // Check if click is outside the hamburger, nav, and toggle
+      const isClickInsideNav = nav.contains(event.target);
+      const isClickInsideHamburger = hamburger.contains(event.target);
+      const isClickInsideToggle = navToggle.contains(event.target);
+
+      // Close menu if clicked outside
+      if (!isClickInsideNav && !isClickInsideHamburger && !isClickInsideToggle) {
+        navToggle.checked = false;
+      }
+    });
+  </script>
+</body>
+</html>
