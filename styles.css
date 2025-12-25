@@ -246,9 +246,9 @@ img {
 }
 
 .title {
-  font-family: "Cinzel Decorative", serif;
+  font-family: "Cinzel Decorative", sans-serif;
   font-size: 100px;
-  font-weight: 900;
+  font-weight: 400;
   color: var(--accent);
   margin: 0 0 12px 0;
   position: relative;
