@@ -188,11 +188,6 @@ img {
   );
 }
 
-
-
-
-
-
 .hero::after {
   content: "";
   position: absolute;
@@ -246,9 +241,9 @@ img {
 }
 
 .title {
-  font-family: "Cinzel Decorative", sans-serif;
+  font-family: "Cinzel", serif;
   font-size: 100px;
-  font-weight: 400;
+  font-weight: 900;
   color: var(--accent);
   margin: 0 0 12px 0;
   position: relative;
@@ -256,14 +251,6 @@ img {
   display: block;
   width: 100%;
   text-align: left;
-}
-
-.title-second {
-  font-family: "Indie Flower", cursive;
-  font-size: 150px;
-  color: var(--fx-color);
-  margin: 0 0 12px;
-  position: relative;
 }
 
 .tagline {
@@ -287,8 +274,9 @@ img {
   text-decoration: none;
   font-weight: 600;
 }
+
 /* responsive */
-@media (max-width: 1800px) {
+@media (max-width: 1262px) {
   .hero::before {
     width: 80%;
     background-position: center;
@@ -352,8 +340,21 @@ img {
     .tagline {
     font-size: 40px;
     text-align: center;
-    /* margin-left: 150px;
-    margin-right: 150px; */
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .title {
+    font-size: 50px;
+    text-align: center;
+  }
+    .tagline {
+    font-size: 30px;
+    text-align: center;
   }
 }
 
