@@ -367,18 +367,70 @@ img {
 /* GALLERY */
 
 .gallery-section {
-  padding: 80px 0;
+  padding: 10px 0;
   background: #070707;
   color: var(--muted);
 }
 
 .section-title {
-  font-size: 14px;
-  letter-spacing: 1px;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 30px;
   color: var(--muted);
   margin-bottom: 24px;
-  font-weight: 700;
+  font-weight: 300;
+  text-align: center;
 }
+
+.about-inner .section-title {
+  grid-column: 1 / -1; /* span both columns */
+  text-align: center;
+  margin-bottom: 10px; /* adjust to taste */
+}
+
+.about-inner .section-divider {
+  grid-column: 1 / -1;
+  width: 100%;
+}
+
+.email-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 200;
+}
+
+.material-symbols-outlined {
+  font-size: 40px;
+  color: var(--muted); /* your gold accent */
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  background-image: url("images/icons/sculpting.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--muted);
+}
+
+i {
+  font-size: 40px;
+  color: var(--muted); /* your gold accent */
+}
+
+
+
+
+
+.section-divider {
+  border: 0;
+  height: 1px;
+  background: var(--muted);
+  opacity: 0.3;
+  width: 100%;
+  margin: 60px 0;
+}
+
 
 .grid {
   display: grid;
@@ -490,7 +542,7 @@ figcaption {
 /* PROCESS */
 
 .process {
-  padding: 80px 0;
+  padding: 10px 0;
   background: #0a0a0a;
   color: var(--muted);
 }
@@ -533,7 +585,7 @@ figcaption {
 /* ABOUT */
 
 .about {
-  padding: 80px 0;
+  padding: 10px 0;
   background: #070707;
   color: var(--muted);
 }
@@ -544,6 +596,7 @@ figcaption {
   gap: 28px;
   align-items: center;
 }
+
 
 .portrait img {
   border-radius: 8px;
@@ -563,7 +616,7 @@ figcaption {
 /* CONTACT */
 
 .contact {
-  padding: 80px 0;
+  padding: 10px 0;
   background: #050505;
   color: var(--muted);
 }
