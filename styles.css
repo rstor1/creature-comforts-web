@@ -374,7 +374,6 @@ img {
 /* GALLERY */
 
 .gallery-section {
-  /* padding: 10px 0; */
   padding-top: 0;
   background: #070707;
   color: var(--muted);
@@ -599,15 +598,6 @@ figcaption {
   color: var(--muted);
 }
 
-/* .about-inner {
-  display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 28px;
-  align-items: center;
-  padding-top: 0; 
-  margin-top: 0;
-} */
-
 .about-inner {
   display: flex;
   flex-direction: column;
@@ -693,6 +683,17 @@ figcaption {
   margin-bottom: 18px;
   text-align: center;
   color: var(--muted);
+}
+
+.built-by-container {
+  margin-top: 20px;
+  text-align: center;
+  color: var(--muted);
+}
+
+.built-by {
+  color: var(--accent);
+  font-weight: 200;
 }
 
 .imdb-link {
