@@ -13,3 +13,21 @@
         navToggle.checked = false;
       }
     });
+
+    // OPEN LIGHTBOX
+document.querySelectorAll('.card-link').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(link.getAttribute('href'));
+    if (target) target.classList.add('is-open');
+  });
+});
+
+// CLOSE LIGHTBOX (click overlay or close link)
+document.querySelectorAll('.lightbox').forEach(box => {
+  box.addEventListener('click', e => {
+    if (e.target === box || e.target.classList.contains('lightbox-close')) {
+      box.classList.remove('is-open');
+    }
+  });
+});

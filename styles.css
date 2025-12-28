@@ -537,7 +537,7 @@ figcaption {
 }
 
 /* show when targeted */
-.lightbox:target {
+.lightbox.is-open {
   display: flex;
 }
 
