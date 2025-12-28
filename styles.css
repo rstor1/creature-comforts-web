@@ -1,8 +1,6 @@
 :root {
   --bg: #070707;
-  --muted: #F5E093;
   --accent: #F5E093;
-  --fx-color: #FDF8E8;
   --container: 1200px;
 }
 
@@ -260,7 +258,7 @@ img {
 
 
 .tagline {
-  color: var(--muted);
+  color: var(--accent);
   margin: 0 0 12px 10px;
   padding: 0;
   display: block;
@@ -275,7 +273,7 @@ img {
   font-family: "Source Sans 3", sans-serif;
   font-weight: 200; 
   font-size: 22px;
-  color: var(--muted);
+  color: var(--accent);
 }
 
 .cta {
@@ -376,16 +374,17 @@ img {
 .gallery-section {
   padding-top: 0;
   background: #070707;
-  color: var(--muted);
+  color: var(--accent);
 }
 
 .section-title {
   font-family: "Source Sans 3", sans-serif;
   font-size: 30px;
-  color: var(--muted);
-  margin-bottom: 24px;
+  color: var(--accent);
+  margin-bottom: 10px;
   font-weight: 300;
   text-align: center;
+  padding-bottom: 0;
 }
 
 .about-inner .section-title {
@@ -412,7 +411,7 @@ img {
 
 .material-symbols-outlined {
   font-size: 40px;
-  color: var(--muted); /* your gold accent */
+  color: var(--accent); /* your gold accent */
 }
 
 .icon {
@@ -422,18 +421,18 @@ img {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  color: var(--muted);
+  color: var(--accent);
 }
 
 i {
   font-size: 40px;
-  color: var(--muted); /* your gold accent */
+  color: var(--accent); /* your gold accent */
 }
 
 .section-divider {
   border: 0;
   height: 1px;
-  background: var(--muted);
+  background: var(--accent);
   opacity: 0.3;
   width: 100%;
 }
@@ -499,6 +498,14 @@ figcaption {
   color: var(--accent);
   font-family: "Source Sans 3", sans-serif;
   font-weight: 400;
+  text-align: center;
+}
+
+.click-img-txt {
+  font-family: "Source Sans 3", sans-serif;
+  color: var(--accent);
+  text-align: center;
+  margin-top: -10px;
 }
 
 .name {
@@ -551,7 +558,7 @@ figcaption {
 .process {
   padding-top: 0;
   background: #0a0a0a;
-  color: var(--muted);
+  color: var(--accent);
   padding-bottom: 60px;
 }
 
@@ -581,7 +588,7 @@ figcaption {
 
 .step p {
   font-size: 14px;
-  color: var(--muted);
+  color: var(--accent);
 }
 
 @media (max-width: 900px) {
@@ -595,7 +602,7 @@ figcaption {
 .about {
   padding-top: 0;
   background: #070707;
-  color: var(--muted);
+  color: var(--accent);
 }
 
 .about-inner {
@@ -641,7 +648,7 @@ figcaption {
 .contact {
   padding-top: 0;
   background: #050505;
-  color: var(--muted);
+  color: var(--accent);
 }
 
 .contact-form {
@@ -654,7 +661,7 @@ figcaption {
 .contact-form label span {
   display: block;
   font-size: 12px;
-  color: var(--muted);
+  color: var(--accent);
   margin-bottom: 6px;
 }
 
@@ -682,13 +689,13 @@ figcaption {
   margin-top: 18px;
   margin-bottom: 18px;
   text-align: center;
-  color: var(--muted);
+  color: var(--accent);
 }
 
 .built-by-container {
   margin-top: 20px;
   text-align: center;
-  color: var(--muted);
+  color: var(--accent);
 }
 
 .built-by {
@@ -697,7 +704,7 @@ figcaption {
 }
 
 .imdb-link {
-  color: var(--muted);
+  color: var(--accent);
   transition: color .3s ease;
 }
 
