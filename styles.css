@@ -591,6 +591,21 @@ figcaption {
   color: var(--accent);
 }
 
+#play-btn,
+#pause-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+#play-btn:hover i,
+#pause-btn:hover i {
+  color: white;
+}
+
+
 @media (max-width: 900px) {
   .steps {
     grid-template-columns: 1fr;

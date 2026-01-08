@@ -31,3 +31,38 @@ document.querySelectorAll('.lightbox').forEach(box => {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const audio = document.getElementById("bg-audio");
+  const playBtn = document.getElementById("play-btn");
+  const pauseBtn = document.getElementById("pause-btn");
+
+  let unlocked = false;
+
+  function unlockAudio() {
+    if (!unlocked) {
+      audio.load(); // required for streaming sources
+      audio.play().catch(err => console.log("Autoplay blocked:", err));
+      unlocked = true;
+
+      // Remove all unlock listeners
+      document.removeEventListener("click", unlockAudio);
+      document.removeEventListener("touchstart", unlockAudio);
+      document.removeEventListener("keydown", unlockAudio);
+      document.removeEventListener("pointerdown", unlockAudio);
+    }
+  }
+
+  // Any real gesture will unlock audio
+  document.addEventListener("click", unlockAudio);
+  document.addEventListener("touchstart", unlockAudio);
+  document.addEventListener("keydown", unlockAudio);
+  document.addEventListener("pointerdown", unlockAudio);
+
+  // Manual controls
+  playBtn.addEventListener("click", () => audio.play());
+  pauseBtn.addEventListener("click", () => audio.pause());
+});
+
+
+
