@@ -727,5 +727,49 @@ figcaption {
   color: #ffffff;
 }
 
+/* FOOTER */
+
+/* Sticky audio footer */
+.audio-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* background: #111; */
+  padding: 10px 0;
+  z-index: 9999;             /* above everything else */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-top: 1px solid #333; */
+  backdrop-filter: blur(6px);
+  background: linear-gradient(180deg, rgba(0,0,0,0.85), rgba(0,0,0,0.2));
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+/* Layout for the buttons */
+.audio-controls {
+  display: flex;
+  gap: 20px;
+}
+
+.audio-controls button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.audio-controls button:active {
+  transform: scale(0.9);
+}
+
+/* Prevent content from being hidden behind the sticky footer */
+body {
+  padding-bottom: 70px; /* adjust to match footer height */
+}
+
+
 
 
